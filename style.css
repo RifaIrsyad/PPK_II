@@ -3,11 +3,16 @@ nav {
     background-color: #333;
     color: #fff;
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
@@ -25,6 +30,8 @@ section {
     margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Style Footer */
@@ -33,80 +40,61 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Di dalam berkas style.css */
 .link-button {
-    background-color: #007bff; /* Warna latar belakang tombol */
-    color: #fff; /* Warna teks tombol */
-    border: none; /* Menghapus garis pinggir tombol */
-    padding: 10px 20px; /* Padding di dalam tombol */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px; /* Ukuran teks */
-    margin: 10px 0; /* Jarak di atas dan bawah tombol */
+    font-size: 16px;
+    margin: 10px 0;
     cursor: pointer;
-    border-radius: 5px; /* Untuk memberi sudut melengkung pada tombol */
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .link-button a {
-    color: #fff; /* Warna teks tautan di dalam tombol */
+    color: #fff;
     text-decoration: none;
 }
 
 /* Untuk layar yang lebih kecil dari 600px */
 @media only screen and (max-width: 600px) {
-  /* Ubah warna latar belakang navbar */
-  nav {
-    background-color: #007bff;
-  }
+    /* Ubah warna latar belakang navbar */
+    nav {
+        background-color: #007bff;
+    }
 
-  /* Ubah warna teks navbar */
-  nav a {
-    color: #fff;
-  }
+    /* Ubah warna teks navbar */
+    nav a {
+        color: #fff;
+    }
 
-  /* Ubah tampilan list menu menjadi blok */
-  nav ul li {
-    display: block;
-    margin: 10px;
-  }
+    /* Ubah tampilan list menu menjadi blok */
+    nav ul li {
+        display: block;
+        margin: 10px;
+    }
 
-  /* Ubah lebar tombol menjadi 100% */
-  .link-button {
-    width: 100%;
-  }
-}
-
-/* Ubah tampilan navbar menjadi flexbox */
-nav {
-  display: flex;
-  flex-direction: row; /* Mengatur arah elemen menjadi horizontal */
-  justify-content: space-between; /* Mengatur jarak antara elemen menjadi sama rata */
-  align-items: center; /* Mengatur elemen agar berada di tengah secara vertikal */
-}
-
-/* Ubah tampilan section menjadi flexbox */
-section {
-  display: flex;
-  flex-direction: column; /* Mengatur arah elemen menjadi vertikal */
-}
-
-/* Ubah tampilan footer menjadi flexbox */
-footer {
-  display: flex;
-  justify-content: center; /* Mengatur elemen agar berada di tengah secara horizontal */
+    /* Ubah lebar tombol menjadi 100% */
+    .link-button {
+        width: 100%;
+    }
 }
 
 /* Tambahkan efek hover pada tombol */
 .link-button:hover {
-  transform: scale(1.1); /* Membesarkan ukuran tombol sebesar 10% */
-  transition: transform 0.3s ease-in-out; /* Mengatur durasi dan fungsi waktu transformasi */
+    transform: scale(1.1);
 }
 
 /* Tambahkan efek hover pada teks di dalam tombol */
 .link-button a:hover {
-  transform: rotate(10deg); /* Memutar teks sebesar 10 derajat */
-  transition: transform 0.3s ease-in-out; /* Mengatur durasi dan fungsi waktu transformasi */
+    transform: rotate(10deg);
 }
