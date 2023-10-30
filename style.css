@@ -54,3 +54,59 @@ footer {
     color: #fff; /* Warna teks tautan di dalam tombol */
     text-decoration: none;
 }
+
+/* Untuk layar yang lebih kecil dari 600px */
+@media only screen and (max-width: 600px) {
+  /* Ubah warna latar belakang navbar */
+  nav {
+    background-color: #007bff;
+  }
+
+  /* Ubah warna teks navbar */
+  nav a {
+    color: #fff;
+  }
+
+  /* Ubah tampilan list menu menjadi blok */
+  nav ul li {
+    display: block;
+    margin: 10px;
+  }
+
+  /* Ubah lebar tombol menjadi 100% */
+  .link-button {
+    width: 100%;
+  }
+}
+
+/* Ubah tampilan navbar menjadi flexbox */
+nav {
+  display: flex;
+  flex-direction: row; /* Mengatur arah elemen menjadi horizontal */
+  justify-content: space-between; /* Mengatur jarak antara elemen menjadi sama rata */
+  align-items: center; /* Mengatur elemen agar berada di tengah secara vertikal */
+}
+
+/* Ubah tampilan section menjadi flexbox */
+section {
+  display: flex;
+  flex-direction: column; /* Mengatur arah elemen menjadi vertikal */
+}
+
+/* Ubah tampilan footer menjadi flexbox */
+footer {
+  display: flex;
+  justify-content: center; /* Mengatur elemen agar berada di tengah secara horizontal */
+}
+
+/* Tambahkan efek hover pada tombol */
+.link-button:hover {
+  transform: scale(1.1); /* Membesarkan ukuran tombol sebesar 10% */
+  transition: transform 0.3s ease-in-out; /* Mengatur durasi dan fungsi waktu transformasi */
+}
+
+/* Tambahkan efek hover pada teks di dalam tombol */
+.link-button a:hover {
+  transform: rotate(10deg); /* Memutar teks sebesar 10 derajat */
+  transition: transform 0.3s ease-in-out; /* Mengatur durasi dan fungsi waktu transformasi */
+}
