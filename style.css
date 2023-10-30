@@ -34,3 +34,23 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* Di dalam berkas style.css */
+.link-button {
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Menghapus garis pinggir tombol */
+    padding: 10px 20px; /* Padding di dalam tombol */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Ukuran teks */
+    margin: 10px 0; /* Jarak di atas dan bawah tombol */
+    cursor: pointer;
+    border-radius: 5px; /* Untuk memberi sudut melengkung pada tombol */
+}
+
+.link-button a {
+    color: #fff; /* Warna teks tautan di dalam tombol */
+    text-decoration: none;
+}
